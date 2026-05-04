@@ -1,6 +1,6 @@
 // Верхнее меню лендинга: быстрые якоря по секциям и кнопка открытия заявки.
-import { Button } from 'antd';
-import { Header, Inner, Logo, Mark, Nav } from './HeaderNav.styles';
+import { Button } from "antd";
+import { Header, Inner, Logo, Mark, Nav } from "./HeaderNav.styles";
 
 function HeaderNav({ onDemoClick }) {
   return (
@@ -8,7 +8,9 @@ function HeaderNav({ onDemoClick }) {
       <Inner>
         <Logo href="#top" aria-label="Avito Manager">
           <Mark>AM</Mark>
-          Avito Manager
+          <div>
+            Avito <span style={{ color: "#696868d6" }}>Manager</span>
+          </div>
         </Logo>
 
         <Nav>

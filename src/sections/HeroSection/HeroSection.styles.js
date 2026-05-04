@@ -1,10 +1,14 @@
 // Стили первого экрана: сетка, фон, крупный заголовок и карточка под главный скриншот.
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Hero = styled.section`
   padding: 92px 20px 70px;
   background:
-    radial-gradient(circle at 15% 10%, rgba(22, 163, 74, 0.16), transparent 28%),
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(22, 163, 74, 0.16),
+      transparent 28%
+    ),
     radial-gradient(circle at 90% 20%, rgba(30, 58, 138, 0.18), transparent 32%);
 `;
 
@@ -24,8 +28,9 @@ export const Container = styled.div`
 export const Title = styled.h1`
   max-width: 820px;
   margin: 20px 0 20px;
-  font-family: ${({ theme }) => theme.fonts?.heading || 'Sora, Manrope, Arial, sans-serif'};
-  font-size: clamp(42px, 6vw, 76px);
+  font-family: ${({ theme }) =>
+    theme.fonts?.heading || "Sora, Manrope, Arial, sans-serif"};
+  font-size: clamp(42px, 6vw, 42px);
   font-weight: 800;
   line-height: 0.96;
   letter-spacing: -0.055em;
